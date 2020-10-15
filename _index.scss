@@ -1,0 +1,212 @@
+//--------------------------------------------------
+//--------------------------------------------------
+                //MENU 
+//--------------------------------------------------
+//--------------------------------------------------
+
+.sectionM {
+  width: auto;
+  height: 100%;
+  /* background-color: red; */ 
+
+    &__article2 {
+      height: 100%;
+      background-color: $color-fondo;
+      padding-top: 18rem;
+      border: none; 
+    
+      &__title {
+        width: 100%;
+        border-bottom: solid black 0.3rem;
+        /* background-color: tomato; */ 
+      }
+
+    }
+    
+    &__article {
+      height: 100%;
+      background-color: $color-fondo;
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+      border: none;
+
+      &__title {
+        width: 100%;
+        border-bottom: solid black 0.3rem;
+        /* background-color: tomato; */ 
+      }
+      &__div{
+        &__div{
+          margin-bottom: 3rem;
+          &__div{
+            border-radius: 3rem;
+            box-shadow: $size-shadow $color-shadow;
+            &__div-foto-m{
+              overflow: hidden;
+              border-radius: 2.5rem 2.5rem 0rem 0rem; 
+            
+              img{
+                border-radius: 2.5rem 2.5rem 0rem 0rem;
+                transition: all 1.4s ease;
+              }
+          
+              &:hover img{
+                transform: scale(1.4);
+              }
+            
+            }
+            
+          }
+        }
+      }
+    }
+}
+
+
+.sectionM__article__div__div__div__div-texto-m{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+      &__h2{
+        width:$size-width;
+    }
+
+      &__p{
+        width: $size-width;
+    }
+
+    .sectionM__article__div__div__div__div-texto-m__div{
+      width: 100%;
+      & a{
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        padding: 1.8rem;
+        text-align: center;
+      }
+      & img {
+        right: 2rem;
+        bottom: 1rem;
+        width: 12%;
+      }
+    }
+
+}
+
+.sectionM{
+  &__sidebar{
+    background-color: rgba(42, 42, 42, 0.671);
+    position: fixed;
+    overflow: scroll;
+    z-index: 2;
+    width: 65rem;
+    height: 91vh;
+    right: -65rem;
+    top: 10.5rem;
+    transition: all 0.8s;
+
+    &__h2{
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem;
+      color: white;
+      font-family:'Roboto', sans-serif;
+      font-weight: 200;
+      font-size: 4.5rem;
+      border-bottom: 0.3rem solid;
+    }
+
+    &__h4{
+      color: white;
+      display: block;
+      text-align: center;
+      font-family:'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 2rem;
+      margin: 2rem 0 1rem 0;
+      padding: 1rem 0;
+    }
+
+    &__boton{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        &__p{
+          color: white;
+          font-size: 2.5rem;
+          text-align: center;
+          display: block;
+      }
+      & #comprarSide{
+        width: 20%;
+        height:5rem;
+        border-radius: 0.8rem;
+        font-size: 1.6rem;
+      }
+      & #vaciarSide{
+        width: 20%;
+        height:5rem;
+        border-radius: 0.8rem;
+        font-size: 1.6rem;
+      }
+      & #cerrarSide{
+        width: 10%;
+        height:5rem;
+        border-radius: 0.8rem;
+        font-size: 1.6rem;
+      }
+
+    }
+    &__div{
+      width: 100%;
+      margin: 0 !important;
+        &__div{
+              width:98%;
+              margin: 0 !important;
+            & img{
+              width:12rem;
+            }
+            &__texto{
+              height: 100%;
+              margin: 0;
+              padding: 0;
+              &__titulo{
+                color:white;
+                text-align: center;
+                font-size: 1.8rem;
+                margin: 0;
+                padding: 0;
+              }
+            }
+            &__precio{
+              margin: 0;
+              padding: 0;
+              & #monto{
+                color: white !important;
+                font-size: 1.8rem;
+                margin: 0;
+                padding: 0;
+              }
+            }
+            &__total{
+              color: white !important;
+              font-size: 1.8rem;
+              margin: 0;
+              padding: 0;
+            }
+            .botoneta{
+              height: 3.5rem;
+              font-size:1.8rem;
+            }
+        }
+      }
+    }
+}
+
+.cerrar{
+  transform: translateX(-65rem);
+  opacity: 1 !important;
+  display: inline-block;
+}

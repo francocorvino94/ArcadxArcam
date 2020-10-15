@@ -1,0 +1,73 @@
+//--------------------------------------------------
+//--------------------------------------------------
+                    //FOOTER
+//--------------------------------------------------
+//--------------------------------------------------
+
+    .footer {
+        font-family: 'Open Sans', sans-serif;
+        width:$size-width;
+        background-color: rgb(51, 51, 51);
+    }
+
+//--------------------------------------------------
+                    //SECTOR TEXTO
+//--------------------------------------------------
+    .footer{
+        &__section{
+            &__article{
+                &__h2{
+                    margin: 6rem 0rem 3rem 0rem;
+                }
+                &__div{
+                    width: 50%;
+                    margin: 0 auto; 
+                    overflow: hidden;           
+                    &__p{
+                        margin: 2rem 0;
+                        font-size: 1.8rem;
+                        color: white;
+                        text-align: center;
+                        margin-bottom: 3rem;
+                    }
+                }
+        
+            //--------------------------------------------------
+                            //SECTOR TEXTO
+            //--------------------------------------------------
+        
+                &__texto{
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    &__p{
+                        display: block;
+                        hyphens: auto;
+                        margin-bottom: 5rem;
+                        height: 100%;
+                        font-size: 1.8rem;
+                        line-height: 4.5rem;
+                        text-align: justify;
+                        letter-spacing: 0.025em;
+                        padding: 8rem 4rem 8rem 4rem;
+                        border: solid black 0.5rem; 
+                    }
+        
+                    &__ol{
+                        display: block;
+                        margin-bottom: 5rem;
+                        height: 100%;
+                        font-size: 1.8rem;
+                        line-height: 4.5rem;
+                        text-align: justify;
+                        padding: 8rem 4rem 8rem 4rem;
+                        border: solid black 0.5rem;
+                    }
+                }
+        
+            }
+        }
+        
+    }
+
+

@@ -1,0 +1,305 @@
+/*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+//--------------------------------------------------
+//--------------------------------------------------
+                //HEADER
+//--------------------------------------------------
+//--------------------------------------------------
+.header{
+    @extend .container-fluid;
+    @extend .p-0;
+    @extend .m-0;
+
+    &__nav{
+        @extend .row;
+        @extend .navbar;
+        @extend .navbar-expand-lg;
+        @extend .navbar-light;
+        @extend .bg-light;
+        @extend .p-0;
+        @extend .m-0;
+        
+
+//--------------------------------------------------
+                //SECTOR LOGO
+//--------------------------------------------------
+
+        &__div{
+            @extend .col-sm-12;
+            @extend .col-lg-2;
+            @extend .col-xl-2;
+            @extend .m-0;
+            &__a{
+                &__img{
+                    @extend .img-fluid;
+                }
+            }
+        }
+
+        &__button{
+            @extend .navbar-toggler;
+            @extend .col-sm-12;
+        
+            &__span{
+                @extend .navbar-toggler-icon; 
+            }
+        }
+
+//--------------------------------------------------
+                //SECTOR MENU Y SUB MENU
+//--------------------------------------------------
+        &__text{
+            @extend .p-0;
+            @extend .col-sm-12;
+            @extend .col-lg-7;
+            @extend .col-xl-8;
+            @extend .collapse;
+            @extend .navbar-collapse;
+
+            &__ul{
+                @extend .navbar-nav;
+                @extend .d-flex;
+                @extend .justify-content-around;
+
+                &__li{
+                    @extend .nav-item;
+                    @extend .active;
+                    @extend .dropdown;
+
+                    &__a{
+                        @extend .text-decoration-none;
+                        @extend .navbar-link !optional;
+                    }
+                    
+                    &__div{
+                        @extend .dropdown-menu;
+                        @extend .text-center;
+
+                        &__a{
+                            @extend .dropdown-item;
+                            @extend .p-0;
+                        }
+                    }
+                }
+            }
+
+        }
+
+//--------------------------------------------------
+                //SECTOR REDES
+//--------------------------------------------------
+        &__redes{
+            @extend .col-sm-12;
+            @extend .col-lg-3;
+            @extend .col-xl-2;
+            @extend .p-0;
+            @extend .d-flex;
+            @extend .align-items-center;
+            @extend .justify-content-around; 
+        }
+    }
+}
+
+//--------------------------------------------------
+//--------------------------------------------------
+                    //FOOTER
+//--------------------------------------------------
+//--------------------------------------------------
+
+.footer{
+    @extend .container-fluid;
+    &__section{
+        @extend .row;
+        &__article{
+            @extend .col-sm-12;
+            @extend .col-lg-4;
+            &__h2{
+                @extend .col-12;
+                @extend .text-center;
+                @extend .font-weight-bolder;
+                @extend .text-white;
+            }
+            &__div{
+                @extend .m-auto;
+                @extend .row;
+                @extend .pt-4;
+
+//--------------------------------------------------
+                //SECTOR IMG
+//--------------------------------------------------
+
+                &__div{
+                    @extend .col-sm-12;
+                    @extend .col-md-3;
+                    @extend .col-lg-6;
+                    @extend .p-0;
+                    &__img {
+                        @extend .p-0;
+                        @extend .img-fluid; 
+                    }
+                }
+            }
+//--------------------------------------------------
+                //SECTOR TEXTO
+//--------------------------------------------------
+            &__texto{
+                @extend .row;
+                &__p{
+                    @extend .col-10;
+                    @extend .text-white;
+                }
+                &__ol{
+                    @extend .col-10; 
+                    @extend .text-white;
+                    @extend .text-uppercase;
+                }
+            }
+        }
+
+    }
+}
+
+// --------------------------------------------------
+// --------------------------------------------------
+                        //MENU
+// --------------------------------------------------
+// --------------------------------------------------
+
+
+.sectionM{
+
+//--------------------------------------------------
+                    //SECTROR TITULO
+//--------------------------------------------------
+
+    @extend .container-fluid;
+    &__article2{
+        @extend .container;
+        @extend .pl-5;
+        @extend .pr-5;
+        &__title{
+            @extend .mb-5;
+            @extend .text-center;
+            &__h2{
+                @extend .col-12;
+                @extend .display-2;
+            }
+        }
+    } 
+
+//--------------------------------------------------
+                    //SECTROR TITULO2
+//--------------------------------------------------
+
+    &__article{
+        @extend .container;
+        @extend .pl-5;
+        @extend .pr-5;
+        
+        &__title{
+            @extend .mb-5;
+            @extend .text-center;
+            &__h2{
+                @extend .col-12;
+                @extend .display-2;
+            }
+        }
+//--------------------------------------------------
+                    //SECTROR FOTO
+//--------------------------------------------------
+
+        &__div{
+            @extend .row;
+            &__div{
+                @extend .col-sm-12;
+                @extend .col-lg-6;
+                &__div{
+                    @extend .card;
+                    &__div-foto-m{
+                        @extend .inner !optional;
+                        & img {
+                            @extend .card-img-top;
+                        }
+                    }
+//--------------------------------------------------
+                    //SECTROR TEXTO
+//--------------------------------------------------
+                    &__div-texto-m{
+                        @extend .card-body;
+                        &__h2{
+                            @extend .card-title;
+                            @extend .display-4;
+                            @extend .text-center;
+                        }
+                        &__p{
+                            @extend .card-text;
+                            @extend .h1;
+                            @extend .text-center;
+                        }
+
+                        &__div{
+                            @extend .d-flex;
+                            @extend .justify-content-center;
+                            @extend .position-relative;
+                            & a{
+                                @extend .w-50;
+                                @extend .h-75;
+                                @extend .btn;
+                                @extend .btn-primary;
+                                @extend .mb-3;
+                                @extend .mt-3;
+
+                            }
+                            & img{
+                                @extend .position-absolute;
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}

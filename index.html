@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cursos CAD y CAM">
+        <meta name="keywords" content="cursos, caba, capital   federal, cad, cam">
+        <title>ArCADxArCAM</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <script defer src="js/javascript.js"></script>
+</head>
+<body>
+    <header class="header">    
+        <nav class="header__nav">
+            <div class="header__nav__div"
+                <a class="header__nav__div__a" href="#index.html">
+                    <img class="header__nav__div__a__img" src="fotos/logo.png" alt="foto logo">
+                </a> 
+            </div>
+            <button class="header__nav__button" data-toggle="collapse" data-target="#navBar">
+                <span class="header__nav__button__span"></span>
+            </button>
+            <div class="header__nav__text" id="navBar">
+                <ul class="header__nav__text__ul">
+                    <li class="header__nav__text__ul__li">
+                        <a href="index.html" class="header__nav__text__ul__li__a">Inicio</a>
+                    </li>
+                    
+                    <li class="header__nav__text__ul__li">
+                       
+                        <li class="header__nav__text__ul__li">
+                            <a href="nosotros.html" class="header__nav__text__ul__li__a navbar-link text-decoration-none">Nosotros</a>
+                        </li>
+                        <li class="header__nav__text__ul__li">
+                            <a href="contactos.html" class="header__nav__text__ul__li__a navbar-link text-decoration-none">Contactos</a>
+                        </li>
+                </ul>
+            </div>
+                <div class="header__nav__redes">
+            <!-- ICONO USUARIO -->
+            <i class="fas fa-user fa-3x"onclick="buscarCuenta()" data-toggle="modal" data-target="#staticBackdrop" href="#"></i>
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Realizar REGISTRO</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">Nombre</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email </label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <large id="emailHelp" class="form-text text-muted">Nunca compartas tus datos con NADIE</large>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Contraseña</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" onclick="login()">LOG IN</button>
+                                    <large id="emailHelp" class="form-text text-muted">En caso de que seas usuario haga CLICK en LOG IN</large>
+                                </form>
+                            </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+                                    <button type="button" class="btn btn-primary">ACEPTAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i id="carritoMercado" class="fas fa-shopping-cart fa-3x header__nav__redes__img"></i>
+
+                
+                </div>
+        </nav>
+    </header>
+    <section class="sectionM container-fluid">
+
+<div class="sectionM__sidebar " >
+  <h2 class="sectionM__sidebar__h2">CARRITO DE COMPRAS</h2>
+  <h4 class="sectionM__sidebar__h4">SELEECION DE CURSOS</h4>
+  <div class="sectionM__sidebar__boton">
+      <p  class="sectionM__sidebar__boton__p">Total: $<span id="total">0</span></p>
+      <button id="comprarSide" type="button" class="btn btn-dark">Comprar</button>
+      <button id="vaciarSide" type="button" class="btn btn-dark">Vaciar</button>
+      <button id="cerrarSide" type="button" class="btn btn-dark">Cerrar</button>
+  </div>
+  <div id="aqui" class="sectionM__sidebar__div row ">
+      <!-- AGREGAR JS -->
+  </div>
+</div>
+
+    <h2>Reserve su cupo en elnuevo curso de ZBrush.</h2>
+    <button onclick="cupos()">Pedir cupo</button>
+
+    <div id="cursos" class="card-deck">
+<!-- AQUI SE IMPRIMEN LOS CURSOS DESDE JS -->
+    </div>
+
+
+    
+
+  
+
+
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/199cb6dc3b.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+   
+  

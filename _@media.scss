@@ -1,0 +1,533 @@
+//--------------------------------------------------
+//--------------------------------------------------
+                //HEADER
+//--------------------------------------------------
+//--------------------------------------------------
+
+
+//--------------------------------------------------
+    //SECTOR LOGO
+//--------------------------------------------------
+@media (max-width: 992px) {
+    .header__nav__div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &__a{
+            &__img {
+                width: 20rem;
+                padding: 0rem;
+            }
+        }
+    }
+}
+
+//--------------------------------------------------
+    //SECTOR ANIMACION DE MENU
+//--------------------------------------------------
+@media (min-width: 992px){
+    .header__nav__text__ul__li__a {
+        font-size: 2.5rem;
+        color: inherit; 
+        position: relative;
+        padding: 2rem 2rem;
+        transition: .7s;
+        content: none;
+    }
+}
+
+@media (min-width: 1047px){
+    .header__nav__text__ul__li__a {
+        font-size: 2.5rem;
+        color: inherit; 
+        position: relative;
+        padding: 2rem 2rem;
+        transition: .7s;
+        content: none;
+
+    }
+
+    .header__nav__text__ul__li__a:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $size-width;
+        height: 4px;
+        background-color:black;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition:transform .7s;
+    } 
+    
+    .header__nav__text__ul__li__a:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    
+    .header__nav__text__ul__li__a:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: $size-width;
+        height: 4px;
+        background-color:black;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition:transform .5s;
+    } 
+    
+    .header__nav__text__ul__li__a:hover:after{
+        transform: scaleX(1);
+        transform-origin: right;
+    } 
+    
+    } 
+
+
+//--------------------------------------------------
+// SECTOR NAV FORMATO SM/MD
+//--------------------------------------------------
+@media (max-width: 992px) {
+.header{
+    position: static;
+    }
+
+//--------------------------------------------------           
+    //SECTOR MENU
+//--------------------------------------------------
+        .header__nav__text__ul__li {
+            text-align: center;
+            padding: 1rem;
+
+            &__a{
+                font-size: 2.5rem;
+                font-weight: lighter;
+                color: black;  
+            }
+        }
+
+//--------------------------------------------------
+    // SECTOR SUB-MENU
+//--------------------------------------------------    
+        .header__nav__text__ul__li__div{
+            font-size: 1.8rem;
+            margin: 0.5rem 0;
+            width: $size-width;
+
+            &__a{
+                font-size: 1.8rem;
+                margin: 1rem 0;
+            }
+        }
+    }
+
+//--------------------------------------------------
+    //SECTOR FOTOS REDES FORMATO SM
+//--------------------------------------------------
+@media(min-width:1200px) {
+    .header__nav__redes { 
+        &__img{
+            width: 5rem; 
+        }
+    } 
+    }
+
+@media(max-width:1200px) {
+    .header__nav__redes {
+        display: flex;
+        justify-content: space-evenly !important;
+        &__img{
+            width: 4rem;
+        }
+    } 
+    }
+
+@media(max-width:992px) {
+    .header__nav__redes {
+        &__img{
+            width: 5rem;}
+        }
+    }
+
+@media(max-width:765px) {
+    .header__nav__redes {
+    &__img{
+        width: 4rem;}
+    }
+}
+
+
+
+
+//--------------------------------------------------
+//--------------------------------------------------
+                //FOOTER
+//--------------------------------------------------
+//--------------------------------------------------
+
+@media (max-width: 1440px) {
+    .footer__section__article__div {
+    width:80%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .footer__section__article__div {
+    width:80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer__section__article__div {
+    margin: 0 auto;
+    padding: 0rem;
+    width:80%;
+    }
+}
+
+@media (max-width: 765px) {
+    .footer__section__article__div {
+    margin: 0 auto;
+    padding: 0rem;
+    width:50%;
+    }
+}
+
+//--------------------------------------------------
+                //SECTOR TEXTO
+//--------------------------------------------------
+
+@media (max-width: 1280px) {
+    .footer__section__article__texto__p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        padding: 5rem 2rem 8rem 2rem ;
+    }
+    .footer__section__article__texto__ol {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        padding: 5rem 2rem 5rem 3rem ;
+    } 
+}
+
+@media(max-width: 769px){
+    .footer__section__article__texto__p {
+        padding: 4rem;
+        margin-bottom: 0;}
+    .footer__section__article__texto__ol{
+        padding: 4rem;
+    }   
+}
+
+@media (max-width: 576px) {
+    .footer__section__article__div__p{
+        margin-bottom:0;
+    }
+    .footer__section__article__h2{
+        margin-top:5rem;
+    }
+    .footer__section__article__texto__p {
+    font-size: 1.2rem;
+    line-height: 4rem;
+    margin-bottom: 0;
+    padding: 4rem;}
+    .footer__section__article__texto__ol {
+    font-size: 1.2rem;
+    line-height: 4rem;
+    padding: 4rem;} 
+}
+
+//--------------------------------------------------
+//--------------------------------------------------
+            //INDEX
+//--------------------------------------------------
+//--------------------------------------------------
+
+//--------------------------------------------------
+            //VIDEO
+//--------------------------------------------------
+
+@media (max-width: 1200px) {
+    .index{
+        margin-top: 12rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .index{
+        margin-top:4rem;
+        height: 100vh;
+    }
+}
+@media (max-width: 763px) {
+    .index{
+        height: 73rem;
+        margin:0; 
+        background-image:none;
+        &__video{
+        width:100vw;
+        }
+    }
+}
+//--------------------------------------------------
+                    //ACORDION
+//--------------------------------------------------
+
+@media (max-width: 768px) {
+    .preguntas{
+        &__titulo{
+            margin: 0 0 3rem 0;
+            &__div{
+                &__button{
+                    h2{
+                        color:black;
+                        font-size: 2.5rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+            &__collapse{
+                &__div{
+                    h4{
+                        font-size:2rem;
+                    }
+                    h5{
+                        font-size:1.8rem; 
+                    }
+                    p{
+                        font-size:1.6rem;
+                    }
+                    #p-especial{
+                        font-size:1.8rem;
+                    }
+                    li{
+                        font-size:1.6rem;
+                    }
+                }
+            }
+        }
+    } 
+}
+//--------------------------------------------------
+                //BOTON DE COMPRAS
+//--------------------------------------------------
+//--------------------------------------------------
+            //CARUSEL
+//--------------------------------------------------
+
+@media (max-width: 768px) {
+    
+    .carrusel{
+        background-color: $color-fondo;
+        padding: 4rem 0;
+        &__article{
+            &__div{
+                width:100%;
+                margin: 0;
+            }
+        }
+    }
+
+    .carrusel__article__div__div__div__div{
+        &__a{
+            font-size: 1.5rem;
+            padding: 0.5rem 3.5rem;
+        }
+    }
+}
+
+
+//--------------------------------------------------
+//--------------------------------------------------
+                //MENU
+//--------------------------------------------------
+//--------------------------------------------------
+
+@media (max-width: 768px) {
+
+//--------------------------------------------------
+                //TAMAÑO DE TITULO 
+//--------------------------------------------------
+
+    .sectionM{
+        &__article2{
+            margin-top: 3rem;
+            padding-top: 3rem;
+            &__title{
+                &__h2{
+                    font-size: 4rem;
+                }
+            }
+        }
+
+        &__article{
+            z-index: -1;
+            padding-top: 2rem;
+            &__title{
+                &__h2{
+                    font-size: 4rem ;
+                }
+            }
+//--------------------------------------------------
+                //TAMAÑO DE TEXTO
+//--------------------------------------------------
+            &__div{
+                &__div{
+                    &__div{
+                        height: 50rem;
+                        &__div-foto-m{
+                            img{
+                                height: 35rem;
+                            }    
+                        }
+                        &__div-texto-m{
+                            &__h2{
+                                font-size: 2.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .sectionM{
+        &__article2{
+            margin-top: 2rem;
+        }
+    }
+}
+
+//--------------------------------------------------
+//--------------------------------------------------
+                //BEBIDAS
+//--------------------------------------------------
+//--------------------------------------------------
+
+@media (max-width: 992px) {
+
+//--------------------------------------------------
+                //TAMAÑO DE TITULO 
+//--------------------------------------------------   
+        .sectionB{
+            &__article2{
+                margin-top: 3rem;
+                padding-top: 3rem;
+                &__title{
+                    &__h2{
+                        font-size: 4rem;
+                    }
+                }
+            }
+    
+            &__article{
+                padding-top: 2rem;
+                &__title{
+                    &__h2{
+                        font-size: 4rem;
+                    }
+                }
+//--------------------------------------------------
+                //TAMAÑO DE TEXTO
+//--------------------------------------------------
+                &__div{
+                    &__div{
+                        &__div{
+                            &__div-texto-b{
+                                &__h2{
+                                    font-size: 2.8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+@media (max-width: 576px) {
+    .sectionB{
+        &__article2{
+            margin-top: 2rem;
+        }
+    }
+}
+    
+//--------------------------------------------------
+//--------------------------------------------------
+                //NOSOTROS
+//--------------------------------------------------
+//--------------------------------------------------
+
+@media (max-width: 992px) {
+    .sectionN{
+        &__article{
+            &__div{
+                margin: 5rem 0 0 0;
+            }
+            &__div-texto-n{
+                margin: 4rem 0;
+            }
+        }
+    }
+}
+
+//--------------------------------------------------
+//--------------------------------------------------
+                //CONTACTOS
+//--------------------------------------------------
+//--------------------------------------------------
+
+@media (max-width: 1200px) {
+    .sectionC{
+        &__article{
+            padding: 18rem 0rem 0rem  0rem;
+            &__div{
+                margin-bottom: 0rem;
+            }
+            &__form{
+                border: none;
+                &__h2{
+                    padding-top: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .sectionC{
+        &__article{
+            padding: 0;
+            margin-top: 3rem;
+            &__form{
+                &__h2{
+                    font-weight: 300;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .sectionC{
+        &__article{
+            &__form{
+                &__h2{
+                    font-weight: 300;
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+    #validationTextarea{
+        width: 83%;
+    }
+
+}
